@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="icon" href="logo.jpg" />
+<style>
+ .service .header{
+	margin-bottom: 30px;
+}
+
+.service .header h1{
+	font-weight: 700;
+	text-align: center;
+}
+
+.service .box_wrapper{
+	display: flex;
+	justify-content: center;	
+}
+
+.service .box_row{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;	
+}
+
+.service .box_row .box_col{
+	margin-right: 15px;
+	width: 400px;
+	text-align: center;
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	color: #fff;
+}
+
+.service .box_row .box_col:last-child{
+	margin-right: 0px;
+}
+
+.service .box_row .box_col.box_col_1{
+	background: #1e2c4f ;
+}
+
+.service .box_row .box_col.box_col_2{
+	background:  #1e2c4f;
+}
+
+.service .box_row .box_col.box_col_3{
+	background:  #1e2c4f;
+}
+
+.service .box_row .box_col .box_title{
+	margin: 12px 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+	body{
+		padding: 50px 15px 0;
+	}
+	.service .box_row{
+		width: 100%;	
+	}  
+}
+
+@media screen and (max-width: 767px) {
+	.service .box_row{
+		flex-direction: column;
+	}
+	.service .box_row .box_col{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+  <nav>
+    <ul class='nav-bar'>
+      <li><a href='#'><img class='logo' src="logo.jpg" /></a></li>
+      <input type='checkbox' id='check' />
+      <span class="menu">
+
+        <li><a href="about us.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="audit.html">Audits</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav>
+
+
+  
+  <div class="service">
+    <div class="header">
+      <h1>Services</h1>
+    </div>	
+    <div class="box_wrapper">
+      <div class="box_row">
+        <div class="box_col box_col_1">
+          <div class="box_img">
+            <img src="" alt="">
+          </div>
+          <div class="box_title">
+            <p>Training</p>
+          </div>
+          <div class="box_des">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="box_col box_col_2">
+          <div class="box_img">
+            <img src="code.png" alt="">
+          </div>
+          <div class="box_title">
+            <p>Implementation</p>
+          </div>
+          <div class="box_des">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="box_col box_col_3">
+          <div class="box_img">
+            <img src="camera.png" alt="">
+          </div>
+          <div class="box_title">
+            <p>Auditing & Certification</p>
+          </div>
+          <div class="box_des">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <footer class="foo">
+    <div class="container1">
+      <div class="row">
+        <div class="col" id="company">
+          <img src="logo.jpg" alt="" class="logo">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quaerat iusto esse optio eos facere,
+            cumque
+            fuga qui aspernatur sit magni molestiae ipsum porro? Ducimus ut atque neque possimus impedit.
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="#about">About</a>
+            <a href="#Service">Services</a>
+            <a href="#audits"> Audits</a>
+            <a href="#training">Training</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact1">Contact</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h2>Contact</h2>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>xyz</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+00000000</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-envelope"></i>
+            <p>xyz@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- <div class="footer-copy">
+     <p class="p">All Rights Reserved. © 2022  Daksyam Audit Services. </p> 
+    <p class="p1">Designed and developed by <a href="https://www.heliosystechnologies.com"> Heliosys Technologies</a></p> 
+  </div> -->
+
+
+
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2022 <a href="#">Daksyam.</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Designed and developed by</a>
+        <a href="https://www.heliosystechnologies.com">Heliosys Technologies</a>
+      </span>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>

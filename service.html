@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+       
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="icon" href="for.jpg" />
+  <style>
+    
+    * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+              }
+              
+              body {
+                font-family: sans-serif;
+                font-size: 20px;
+              }
+              
+              .logo {
+                width: 25%;
+              }   
+              
+              
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: #1e2c4f;
+  padding: 0px;
+  margin-right: 1px;
+  
+}
+
+              
+             
+              .menu {
+                display: flex;
+              }
+              
+              .menu li {
+                padding-left: 30px;
+              }
+              
+              .menu li a {
+                display: inline-block;
+                text-decoration: none;
+                color: var(--color1);
+                text-align: center;
+                transition: 5mm ease-in-out;
+                position: relative;
+                color: white;
+              }
+              
+              .menu li a::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background-color: white;
+                transition: 0.15s ease-in-out;
+              }
+              
+              .menu li a:hover:after {
+                width: 100%;
+              }
+              
+              .open-menu,
+              .close-menu {
+                position: absolute;
+                color: var(--color1);
+                cursor: pointer;
+                font-size: 1.5rem;
+                display: none;
+              }
+              
+              .open-menu {
+                top: 60%;
+                right: 50px;
+                transform: translateY(-50%);
+                color: white;
+              }
+              
+              .close-menu {
+                top: 20px;
+                right: 20px;
+                color: white;
+              }
+              
+              #check {
+                display: none;
+              }
+              
+
+
+
+nav ul{
+  float: right;
+  margin-right: 30px;
+
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background:#1e2c4f;
+  transition: .5s;
+  text-decoration: none;
+}
+
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+ 
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+  text-decoration: none;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  text-decoration: none;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+  text-decoration: none;
+}
+
+.sv a{
+
+  font-size: 15px;
+  position: relative;
+  font-family: Helvetica;
+  position: relative;
+  display: inline;
+}
+
+              @media(max-width: 610px) {
+                .menu {
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  width: 80%;
+                  
+                  position: fixed;
+                  top: 0;
+                  right: -100%;
+                  z-index: 999;
+                  background-color: #1e2c4f;
+                  ;
+                  transition: all 0.2s ease-in-out;
+                }
+              
+                .menu li {
+                  margin-top: 40px;
+                }
+              
+                .menu li a {
+                  padding: 10px;
+                  text-decoration: none;
+                }
+              
+                .open-menu,
+                .close-menu {
+                  display: block;
+                }
+              
+                #check:checked~.menu {
+                  right: 0;
+                }
+              }
+
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class='nav-bar'>
+    <li><a href='#'><img class='logo' src="logo.jpg" /></a></li>
+    <input type='checkbox' id='check' />
+    <span class="menu">
+
+      <li><a href="about us.html">About</a></li>
+      <li>
+          <a href="#">Service+</a>
+            <ul class="sv">
+           <li><a href="#">ISO</a></li>
+             <li><a href="#">GAP ANALYSIS</a></li>
+             <li><a href="#">SURVEILLANCE AUDITS</a></li>
+             <li><a href="#">ASSIGNING CERTIFYING BODY</a></li>
+          </ul>
+       </li>
+       <li>
+
+      <li><a href="audit.html">Audits</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact us.html">Contact</a></li>
+
+      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+    </span>
+    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+  </ul>
+</nav>
+  <!-- <nav>
+    <ul class='nav-bar'>
+      <li><a href='#'><img class='logo' src="logo.jpg" /></a></li>
+      <input type='checkbox' id='check' />
+      <span class="menu">
+
+        <li><a href="about us.html">About</a></li>
+       <li><a href="service.html">Service<i class="fas fa-caret-down"></i></a>
+        
+       
+      </li> 
+      
+        <li><a href="audit.html">Audits</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav> -->
+
+<!-- services -->
+
+  <section>
+    <div class="rows">
+      <h2 class="section-heading">Our Services</h2>
+    </div>
+    <div class="rows">
+      <div class="columns">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-people-line"></i>
+          </div>
+          <h3><a href="surveillance audits">01.SURVEILLANCE AUDIT</a></h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+            consequatur necessitatibus eaque.
+          </p>
+        </div>
+      </div>
+
+       <div class="columns">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+          <h3><a href="training">02.TRAINING</a></h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+            consequatur necessitatibus eaque.
+          </p>
+        </div>
+      </div> 
+
+
+
+      <div class="rows">
+        <div class="columns">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-people-line"></i>
+            </div>
+            <h3><a href="implementation">03.IMPLEMENTATION</a></h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+  
+         <div class="columns">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-laptop"></i>
+            </div>
+            <h3><a href="auditing">04.AUDITING & CERTIFICATION</a></h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div> 
+  
+      <!-- <div class="rows1">
+        <div class="columns">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <h3><a href="surveillance audits">03.IMPLEMENTATION</a></h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+      
+      <div class="columns">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3><a href="surveillance audits">04.AUDITING & CERTIFICATION</a></h3>
+          <p class="se">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+            consequatur necessitatibus eaque.
+          </p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <br>
+
+
+  
+  <footer class="foo">
+    <div class="container1">
+      <div class="row">
+        <div class="col" id="company">
+          <img src="logo.jpg" alt="" class="logo">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quaerat iusto esse optio eos facere,
+            cumque
+            fuga qui aspernatur sit magni molestiae ipsum porro? Ducimus ut atque neque possimus impedit.
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="#about">About</a>
+            <a href="#Service">Services</a>
+            <a href="#audits"> Audits</a>
+            <a href="#training">Training</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact1">Contact</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h2>Contact</h2>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>xyz</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+00000000</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-envelope"></i>
+            <p>xyz@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2022 <a href="#">Daksyam.</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Designed and developed by</a>
+        <a href="https://www.heliosystechnologies.com">Heliosys Technologies</a>
+      </span>
+    </div>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="icon" href="logo.jpg" />
+<style>
+    
+.blog{
+  margin-top: 0;
+  background-color: #8e8b8b;
+}
+
+.blog h1{
+  font-family: Helvetica;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: gray;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+  <nav>
+    <ul class='nav-bar'>
+      <li><a href='#'><img class='logo' src="logo.jpg" /></a></li>
+      <input type='checkbox' id='check' />
+      <span class="menu">
+
+        <li><a href="about us.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="audit.html">Audits</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav>
+
+
+
+<div class="blog">
+    <h1>Our Blogs</h1>
+    <div class="team">
+      <div class="team_member">
+        <div class="team_img">
+          <img src="demo1.png" alt="Team_image">
+        </div>
+        <h3>abc</h3>
+        <p class="role">Latest Blog News</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="team2.png" alt="Team_image">
+        </div>
+        <h3>xyz</h3>
+        <p class="role">Brand your site at top in few minuts</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p></div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="team3.png" alt="Team_image">
+        </div>
+        <h3>asd</h3>
+        <p class="role">How to become a best sale marketer in a year!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      </div>
+    </div>
+  </div>	
+  
+  <footer class="foo">
+    <div class="container1">
+      <div class="row">
+        <div class="col" id="company">
+          <img src="logo.jpg" alt="" class="logo">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quaerat iusto esse optio eos facere,
+            cumque
+            fuga qui aspernatur sit magni molestiae ipsum porro? Ducimus ut atque neque possimus impedit.
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="#about">About</a>
+            <a href="#Service">Services</a>
+            <a href="#audits"> Audits</a>
+            <a href="#training">Training</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact1">Contact</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h2>Contact</h2>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>xyz</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+00000000</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-envelope"></i>
+            <p>xyz@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- <div class="footer-copy">
+     <p class="p">All Rights Reserved. © 2022  Daksyam Audit Services. </p> 
+    <p class="p1">Designed and developed by <a href="https://www.heliosystechnologies.com"> Heliosys Technologies</a></p> 
+  </div> -->
+
+
+
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2022 <a href="#">Daksyam.</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Designed and developed by</a>
+        <a href="https://www.heliosystechnologies.com">Heliosys Technologies</a>
+      </span>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>
